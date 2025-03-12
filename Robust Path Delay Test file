@@ -1,0 +1,30 @@
+
+//* ------Path x3c2c3z - Robust RISING ---------*/
+$path{ $name path1r;
+$transition{
+x3 ^;
+G2/Z ^;
+G3/Z v;
+G5/Z v;
+z v;
+}
+$condition{ // conditions for steady inputs only - Robust
+x1 00;
+x4 00;
+}
+}
+//* ------Path x3c2c3z - Robust FALLING ---------*/
+$path{ $name path1f;
+$transition{
+x3 v;
+G2/Z v;
+G3/Z ^;
+G5/Z ^;
+z ^;
+}
+$condition{ // conditions for steady inputs only - Robust
+x5 00;
+}
+}
+
+

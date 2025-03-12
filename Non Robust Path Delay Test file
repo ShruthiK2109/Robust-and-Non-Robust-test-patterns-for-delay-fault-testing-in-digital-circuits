@@ -1,0 +1,22 @@
+
+//* ------Path x3c2c3z - Non-Robust RISING ---------*/
+$path{ $name path1r;
+$transition{
+x3 ^;
+G2/Z ^;
+G3/Z v;
+G5/Z v;
+z v;
+}
+}
+//* ------Path x3c2c3z - Non-Robust FALLING ---------*/
+$path{ $name path1f;
+$transition{
+x3 v;
+G2/Z v;
+G3/Z ^;
+G5/Z ^;
+z ^;
+}
+}
+
